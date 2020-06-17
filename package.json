@@ -1,0 +1,23 @@
+{
+  "name": "formless-button",
+  "version": "1.0.0",
+  "description": "Handle button click as form submit.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotass/formless-button.git"
+  },
+  "keywords": [
+    "button",
+    "form",
+    "laravel"
+  ],
+  "author": "Matúš Koterba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotass/formless-button/issues"
+  },
+  "homepage": "https://github.com/kotass/formless-button#readme"
+}
