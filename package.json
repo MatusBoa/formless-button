@@ -1,6 +1,6 @@
 {
   "name": "formless-button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handle button click as form submit.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -2,6 +2,9 @@
 
 Handle button click as form submit.
 
+## Installation
+
+`npm i formless-button`
 
 ## Requirements
 
@@ -22,7 +25,7 @@ For Laravel:
 In your JS file just import `FormlessButton.js`, for example
 
 ```js
-import FormlessButton from "formless-button/formless-button";
+import FormlessButton from "formless-button/FormlessButton";
 ```
 
 FormlessButton will query `<button>` with `data-method` and `data-url` attributes.
