@@ -1,9 +1,12 @@
 {
   "name": "formless-button",
-  "version": "1.0.1",
+  "version": "1.1",
   "description": "Handle button click as form submit.",
+  "main": "dist/FormlessButton.js",
+  "types": "dist/FormlessButton.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "tsc",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/kotass/formless-button/issues"
   },
-  "homepage": "https://github.com/kotass/formless-button#readme"
+  "homepage": "https://github.com/kotass/formless-button#readme",
+  "devDependencies": {
+    "typescript": "^3.9.6"
+  }
 }

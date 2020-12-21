@@ -1,16 +1,19 @@
-import MethodConvertor from "./MethodConvertor";
+import MethodConvertor from "./MethodConvertor"
 
 export default class Form
 {
-    constructor(method, url) {
+    protected root: HTMLFormElement
+
+    constructor(method: string, url: string) {
         this.root = document.createElement("form");
 
         this.root.setAttribute("method", MethodConvertor.convert(method));
         this.root.setAttribute("action", url);
     }
 
-    createTokenInput(token) {
-        const tokenInput = document.createElement("input");
+    protected createTokenInput(token: string): Form
+    {
+        const tokenInput: HTMLInputElement = document.createElement("input");
 
         tokenInput.setAttribute("name", "_token");
         tokenInput.setAttribute("type", "hidden");
@@ -21,8 +24,9 @@ export default class Form
         return this;
     }
 
-    createMethodInput(method) {
-        const methodInput = document.createElement("input");
+    protected createMethodInput(method: string): Form
+    {
+        const methodInput: HTMLInputElement = document.createElement("input");
 
         methodInput.setAttribute("name", "_method");
         methodInput.setAttribute("type", "hidden");
@@ -33,14 +37,16 @@ export default class Form
         return this;
     }
 
-    submit() {
+    public submit(): void
+    {
         document.body.appendChild(this.root);
 
         this.root.submit();
     }
 
-    static create(method, url) {
-        const form = new Form(method, url);
+    public static create(method: string, url: string): Form
+    {
+        const form: Form = new Form(method, url);
 
         return form
             .createTokenInput(
