@@ -27,7 +27,7 @@ For Laravel:
 In your JS file just import `FormlessButton.js`, for example
 
 ```js
-import FormlessButton from "formless-button/FormlessButton";
+import FormlessButton from "formless-button";
 ```
 
 FormlessButton will query `<button>` with `data-method` and `data-url` attributes.
