@@ -1,5 +1,7 @@
 # Formless Button
 
+![npm](https://img.shields.io/npm/v/formless-button)
+
 Handle button click as form submit.
 
 ## Installation
