@@ -5,7 +5,7 @@ export default new class FormlessButton
 {
     protected buttons: NodeListOf<HTMLButtonElement>
 
-    constructor() {
+    public constructor() {
         this.buttons = document.querySelectorAll("button[data-method][data-url]")
 
         if (this.buttons.length > 0) {

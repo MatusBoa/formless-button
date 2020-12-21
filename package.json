@@ -1,6 +1,6 @@
 {
   "name": "formless-button",
-  "version": "1.0.1",
+  "version": "1.1",
   "description": "Handle button click as form submit.",
   "main": "dist/FormlessButton.js",
   "types": "dist/FormlessButton.d.ts",
